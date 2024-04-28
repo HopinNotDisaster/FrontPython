@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        .menu {
+            width: 800px;
+            margin: 20px auto 0;
+            background-color: lightcoral;
+
+        }
+
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu .menu1>li+li {
+            /* position: relative; */
+            margin: 10px 0 0 0;
+        }
+
+        .menu .menu1>li>span {
+            /* padding: 10px 50px; */
+            background-color: blueviolet;
+            font-size: 32px;
+            /* margin: 100px 0; */
+        }
+
+        /* 所有的二级目录 */
+        .menu .menu1>li>ul{
+            display: none;
+            background-color: aquamarine;
+            position: relative;
+            margin: 0 0 0 50px;
+        }
+        /* 所有的三级目录 */
+        .menu .menu1>li>ul>li>ul{
+            display: none;
+            background-color: rgb(167, 233, 211);
+            /* position: relative; */
+            padding: 0 0 0 50px;
+        }
+        /* .menu .menu1>li .menu2-1 {
+            display: none;
+            background-color: aquamarine;
+            position: relative;
+            margin: 0 0 0 50px;
+        } */
+        .appear>ul{
+            display: block !important;
+            /* z-index: 1000; */
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul class="menu1">
+
+            <li class="">
+                <span class="menu1-1 ">一级菜单第一项</span>
+                <ul class=" menu2-1 ">
+                    <li>
+                        <p>二级菜单1.1</p>
+                        <ul>
+                            <li><span>三级菜单3.1.1</span></li>
+                            <li><span>三级菜单3.1.2</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>二级菜单1.2</p>
+                    </li>
+                    <li>
+                        <p>二级菜单1.3</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li><span>一级菜单第二项</span></li>
+
+            <li>
+                <span>一级菜单第三项</span>
+                <ul>
+                    <li>
+                        <span>二级菜单3.1</span>
+                        <ul>
+                            <li><span>三级菜单3.1.1</span></li>
+                            <li><span>三级菜单3.1.2</span></li>
+                        </ul>
+                    </li>
+                    <li><span>二级菜单3.2</span></li>
+                    <li><span>二级菜单3.3</span></li>
+                </ul>
+            </li>
+
+            <li><span>一级菜单第四项</span></li>
+
+            <li><span>一级菜单第五项</span></li>
+        </ul>
+    </div>
+
+
+    <script>
+        let lis = $('li')
+        console.log(lis);
+        lis.each(function(index,li){
+            // console.log(li,typeof(li))
+            li = $(li)
+            li.click(function(event){
+                event.stopPropagation();
+                console.log("diandaooasd");
+                li.toggleClass("appear")
+            })
+        })
+        // let lis = document.querySelectorAll("li")
+        // lis.forEach(function(li){
+        //     li.onclick = function(e){
+        //         e.stopPropagation();
+        //         li.classList.toggle("appear")
+        //     }
+        // })
+
+
+
+
+    </script>
+</body>
+
+</html>

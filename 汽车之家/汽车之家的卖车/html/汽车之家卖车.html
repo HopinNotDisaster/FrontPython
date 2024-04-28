@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汽车之家的卖车！</title>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="../css/bottom_questions.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/top.css">
+    <script src="../js/jquery-3.7.1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .b {
+            display: block !important;
+        }
+
+        .ib {
+            display: inline-block;
+        }
+
+        .n {
+            display: none;
+        }
+
+        .r {
+            position: relative;
+        }
+
+        .a {
+            position: absolute;
+        }
+
+        .line-right {
+            right: 40px
+        }
+        .tomato{
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 淋的导航栏html -->
+    <div class="head_nav">
+        <div class="content">
+            <div class="logo">
+                <a href=""><img src="../img/logo.png" alt=""></a>
+                <!-- <img src="../img/logo.png" alt=""> -->
+            </div>
+            <div class="head_con">
+                <div class="head_city element_hover"><span>郑州</span>
+                    <img class="iconfont" src="../img/下.png" alt="">
+                </div>
+                <div class="nav_list">
+                    <ul class="fn_clear">
+                        <li><a href="">首页</a></li>
+                        <li class="current"><a href="">买车</a></li>
+                        <li><a href="">换车</a></li>
+                        <li><a href="">估值</a></li>
+                        <li><a href="">工具</a></li>
+                        <li><a href="">咨询</a></li>
+                        <li><a href="">论坛</a></li>
+                    </ul>
+                </div>
+                <!-- <div></div> -->
+            </div>
+
+            <div class="right">
+                <div class="header_login">
+                    <span>个人登录</span>
+
+                </div>
+                <div class="header_tool">
+                    <span>商家注册</span>
+
+                </div>
+            </div>
+            <div class="head_search">
+                <input class="search_text" type="text" placeholder="搜一搜您喜欢的品牌车系">
+                <!-- <span></span> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="top">
+        <img src="../img/logo.png" alt="">
+    </div> -->
+
+    <div class="main r">
+        <div class="login-box a">
+            <div class="how-login r">
+                <!-- <span class="a">快捷登录</span> -->
+                <!-- <span class="a">密码登录</span> -->
+                <span class="a">859598968人</span>
+                <span class="a">成功发布卖车信息</span>
+            </div>
+            <!-- <hr class="hr"> -->
+            <!-- <div class="move-line a">
+            </div> -->
+            <div class="input-box1">
+                <input type="text" placeholder="手机号">
+            </div>
+            <div class="input-box2"></div>
+            <div class="input-box3">
+                <input type="text" placeholder="验证码">
+            </div>
+            <div class="input-box4">
+                <input type="text" placeholder="请选择卖车城市">
+            </div>
+            <div class="entry-event r">
+                <input class="a" type="checkbox">
+                <!-- <span>记住我</span> -->
+                <span class="a">
+                    已阅读并同意《<a href="">个人信息保护声明</a>》
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="threep">
+        <img src="../img/三小人.png" alt="">
+    </div>
+
+    <div class="questions">
+        <span>常见问题</span>
+        <ul>
+            <li><div>Q:啦啦啦1</div><div>A:哦哦哦1</div></li>
+            <li><div>Q:啦啦啦2</div><div>A:哦哦哦2</div></li>
+            <li><div>Q:啦啦啦3</div><div>A:哦哦哦3</div></li>
+            <li><div>Q:啦啦啦4</div><div>A:哦哦哦4</div></li>
+            <li><div>Q:啦啦啦5</div><div>A:哦哦哦5</div></li>
+            <li><div>Q:啦啦啦6</div><div>A:哦哦哦6</div></li>
+            <li><div>Q:啦啦啦7</div><div class="">A:哦哦哦7</div></li>
+        </ul>
+    </div>
+
+    
+    <div class="bottom">
+        <img src="../img/bottom.png" alt="">
+    </div>
+
+
+    <script>
+        {
+            // 给予登陆方式下方线条可移动功能与字体高亮！
+            let line = $('.main .login-box .move-line')
+            console.log(line);
+            let how_login1 = $('.main .login-box .how-login span:first-of-type')
+            let how_login2 = $('.main .login-box .how-login span:last-of-type')
+            let temp_tomato = 2
+            if (how_login1.css("color") == "rgb(255, 99, 71)") {
+                temp_tomato = 1
+            }
+
+            // how_login1.mouseleave(function () {
+            //     if (temp_tomato == 1) {
+            //         ;
+            //     }
+            // })
+            how_login2.mouseenter(function () {
+                if (temp_tomato == 1) {
+                    how_login2.css("color", "tomato");
+                    how_login2.mouseleave(function () {
+                        how_login2.css("color", "black");
+                    })
+                }
+                // line.css("right","40px")
+                line.animate({
+                    // right: '40px',
+                    left: "168px"
+                }, 800);  // 持续时间为 2000 毫秒（2 秒）
+                // line.addClass('line-right');
+
+            })
+            // console.log(how_login1.css("color"));
+            console.log(temp_tomato);
+
+
+            how_login1.mouseenter(function () {
+                // line.css("right","auto")
+                // line.removeClass('line-right');
+                line.animate({
+                    left: "40px",
+                    // right: '240px'
+
+                    // 设置 right 属性的目标值
+                }, 800);  // 持续时间为 2000 毫秒（2 秒）
+            })
+        }
+
+        {
+            // 点击输入框会变色！
+            let input_box1 = $('.main .login-box .input-box1')
+            console.log(input_box1);
+            input_box1.click(function(e){
+                e.stopPropagation()
+                // console.log("聚焦！");
+                // input_box1.css("border-color","tomato")
+                input_box1.css("border","2px solid tomato")
+            })
+            $('div').not('.input-box1').click(function(e){
+                e.stopPropagation()
+                console.log("反聚焦！");
+                // input_box1.css("border-color","tomato")
+                input_box1.css("border","1px solid #888")
+            })
+            // 点击输入框会变色！
+            let input_box3 = $('.main .login-box .input-box3')
+            // console.log(input_box1);
+            input_box3.click(function(e){
+                e.stopPropagation()
+                // console.log("聚焦！");
+                // input_box1.css("border-color","tomato")
+                input_box3.css("border","2px solid tomato")
+            })
+            $('div').not('.input-box3').click(function(e){
+                e.stopPropagation()
+                // console.log("反聚焦！");
+                // input_box1.css("border-color","tomato")
+                input_box3.css("border","1px solid #888")
+            })
+
+        }
+        // 让问题栏的字体触摸高亮！
+        {
+            let lis = $('.questions ul li div:first-of-type')
+            lis.each(function(index,li){
+                li = $(li)
+                // console.log(li);
+                li.mouseenter(function(){
+                    li.addClass("tomato")
+                })
+                li.mouseleave(function(){
+                    li.removeClass("tomato")
+                })
+            })
+
+        }
+        {
+            let ques = $(".questions ul li div:first-of-type")
+            ques.each(function(index,que){
+                que = $(que)
+                console.log(que);
+                que.click(function(){
+                    ans = que.next()
+                    console.log(ans);
+                    ans.toggleClass("b")
+                })
+            })
+        }
+    </script>
+
+</body>
+
+</html>

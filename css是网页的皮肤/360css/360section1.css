@@ -1,0 +1,77 @@
+
+
+.s1-t{
+    
+    /* background-color: burlywood; */
+    height: 80px;
+
+}
+.s1-t div{
+    margin: 0 20px 5px 20px;
+
+}
+.s1-tl{
+    display: inline-block;
+    width: 30%;
+    height: 80px;
+}
+.s1-tl img{
+    width: 350px;
+    height: 84px;
+    margin-left: 40px;
+}
+
+.s1-tm{
+    display: inline-block;
+    width: 30%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    bottom: 40px;
+
+}
+.s1-tm input{
+    height: 32px;
+    width: 480px;
+    /* position: relative;
+    bottom: 40px;
+    left: 50px; */
+}
+
+
+.s1-tr{
+    display: inline-block;
+    width: 30%;
+    height: 80px;
+
+}
+
+
+
+.s1-m {
+    /* background-color: bisque; */
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.s1-m ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+
+    
+}
+.s1-m ol li{
+    float: left;
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+}
+.s1-m ol a{
+    color:cyan;
+}
+
+
+
+

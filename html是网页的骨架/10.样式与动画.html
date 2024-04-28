@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+    </div>
+    <button class="diyb">
+        自定义图形运动
+    </button>
+    <button>
+        一个凑数的按钮
+    </button>
+
+    <script>
+        $('body').append(
+            `
+            <div class="d1">
+            </div>
+            <button class="diyb">
+                自定义图形运动
+            </button>
+            `
+        )
+        let div = $('.d1')
+        div.text("div")
+        div.css(
+            {
+                "width": 100,
+                "height": 100,
+                "border-radius": 20,
+                "background-color": 'red',
+                "line-height": "100px",
+                "text-align": 'center'
+            }
+        )
+
+        let diyb = $('.diyb')
+        diyb.click(function () {
+            div.animate({ width: 200, height: 200 }, 1000, function () {
+                div.animate({ width: 100, height: 100 }, 1000)
+            })
+        })
+
+        let buttom = $(".diyb+button")
+        console.log(buttom);
+        buttom.remove()
+        $("body").empty()
+    </script>
+</body>
+
+</html>

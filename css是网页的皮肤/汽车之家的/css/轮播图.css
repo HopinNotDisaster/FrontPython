@@ -1,0 +1,44 @@
+.Pturn{
+    position: relative;
+    height: 320px;
+    margin: 10px 0 0 0;
+    background-color: aquamarine;
+    z-index: 999;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.Pturn .Pleft{
+    display: none;
+    padding: 40px 10px;
+    background-color:rgba(240, 248, 255, 0.365);
+    position: absolute;
+    /* align-items: center; */
+    left: 400px;
+}
+.Pturn .Pright{
+    position: absolute;
+    display: none;
+    padding: 40px 10px;
+    background-color:rgba(240, 248, 255, 0.365);
+    right: 400px;
+}
+
+
+
+
+
+
+.press{
+    height: 258px;
+    width: 1200px;
+    /* margin:  0px  auto  0px; */
+    background-color: red;
+    border: 2px solid lightgreen;
+    position: absolute;
+    left:10px;
+    /* top: ; */
+    z-index: 1000;
+    
+
+}

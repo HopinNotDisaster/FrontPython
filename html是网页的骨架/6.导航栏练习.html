@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav1 {
+            background-color: aqua;
+            height: 80px;
+            font-size: 0;
+        }
+        #nav1 ol{
+            list-style: none;
+        }
+
+        #nav1 ol li{
+            display: inline-block;
+            width: 100px;
+            line-height: 80px;
+        }
+
+        #nav1 ol li:hover{
+            background-color: lightgreen;
+        }
+        #nav1 ol li+li{
+            border-left: 1px solid rebeccapurple;
+        }
+
+        #nav1 ol li a{
+            text-decoration: none;
+            font-size: 36px;
+            float: left;
+        }
+
+        /* #nav {
+            background-color: aqua;
+            height: 80px;
+        } */
+        #navR ol{
+            list-style: none;
+        }
+        #navR ol li {
+            width: 100px;
+            height: 80px;
+            line-height: 80px;
+            float: right;
+        }
+
+        #navR ol li+li{
+            border-right: 1px solid rebeccapurple;
+        }
+
+        #navR ol li a{
+            font-size: 36px;
+            text-decoration: none;
+
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+
+    <nav id="navR">
+        <ol>
+            <li><a href="">注册</a></li>
+            <li><a href="">登录</a></li>
+            
+        </ol>
+    </nav>
+
+    <nav id="nav1">
+        <ol>
+            <li><a href="">首页</a></li>
+            <li>
+                <a href="">文档</a>
+            </li>
+            <li><a href="">下载</a></li>
+        </ol>
+    </nav>
+
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            height: 60px;
+            line-height: 60px;
+            background-color: blueviolet;
+        }
+        nav ul li{
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+        nav ul li:hover{
+            background-color: chocolate;
+
+        }
+        nav ul li:hover .m2{
+            display: block;
+            
+        }
+        nav ul li .m2{
+            display: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="m1">
+            <li><span>首页</span></li>
+            <li>
+                <span>文档</span>
+                <ul class="m2">
+                    <li>d1</li>
+                    <li>d2</li>
+                    <li>d3</li>
+                </ul>
+            </li>
+            <li>
+                <span>下载</span>
+                <ul class="m2">
+                    <li>x1</li>
+                    <li>x2</li>
+                    <li>x3</li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+
+</body>
+
+</html> 

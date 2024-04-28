@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* background-image:linear-gradient(0deg, #cd9cf2 0%, #f6f3ff 100%) */
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>dp1</p>
+        <p>dp2</p>
+        <p>dp3</p>
+    </div>
+    <div>
+        <p>dp1</p>
+        <p>dp2</p>
+        <p>dp3</p>
+    </div>
+    <div class="h1" id="H">
+        <p>dp1</p>
+        <p>dp2</p>
+        <p>dp3</p>
+    </div>
+    <div>
+        <p>dp1</p>
+        <p>dp2</p>
+        <p>dp3</p>
+    </div>
+    <div class="h3">
+        <p>dp1</p>
+        <p>dp2</p>
+        <p>dp3</p>
+    </div>
+
+    <!-- 
+        1.ECMAscript  js的基础语法
+        2.BOM   浏览器 对象 模型 ，把浏览器抽象成对象
+        3.DOM   文档  对象 模型  使用js来操作
+
+     -->
+    <!-- <div>
+        <form action="">
+            <label for="">搜索吧！</label>
+            <input type="text">
+
+        </form>
+    </div> -->
+
+
+    <div class="imgs">
+
+    </div>
+    <script>
+
+        // let input = document.querySelector("input")
+        // console.log(input);
+
+        let ps = document.querySelector(".h3")
+        console.log(ps);
+        ps.innerHTML = "<span>BPFD</span>"
+        ps.remove()
+        let p2 = document.querySelector(".h1")
+        console.log(p2);
+        p2.classList.add("afsafsdf")
+        p2.id = "sdfdsf"
+        p2.title = "h546564645"
+        p2.innerHTML = "<span>BPFD</span><span>BPFD</span><span>BPFD</span>"
+    
+    
+        let imgs = document.querySelector(".imgs");
+        console.log(imgs);
+        let img = document.createElement("img")
+        img.src=("../img/太极.png")
+        imgs.appendChild(img)
+    
+    
+    </script>
+</body>
+
+</html>

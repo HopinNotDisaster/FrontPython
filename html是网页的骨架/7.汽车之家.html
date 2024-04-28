@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的汽车之家</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .b {
+            display: block !important;
+        }
+
+        .ib {
+            display: inline-block;
+        }
+        .n{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../css是网页的皮肤/汽车之家的/css/导航栏.css">
+    <link rel="stylesheet" href="../css是网页的皮肤/汽车之家的/css/轮播图.css">
+</head>
+
+<body>
+    <div class="nav">
+
+        <div class="logo ib">
+            <img src="../css是网页的皮肤/汽车之家的/img/logo.png" alt="">
+        </div>
+
+        <div class="zhengzhou ib">
+            <span>郑州</span>
+            <span><img src="../css是网页的皮肤/汽车之家的/img/down.png" alt=""></span>
+        </div>
+
+        <div class="texts">
+            <span>首页</span>
+            <span>买车</span>
+            <span>卖车</span>
+            <span>换车</span>
+            <span>工具</span>
+            <span>论坛</span>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="搜一搜您喜欢的品牌/车系">
+            <span><img src="../css是网页的皮肤/汽车之家的/img/搜索.png" alt=""></span>
+        </div>
+        <div></div>
+
+
+    </div>
+
+
+    <div class="Pturn">
+        <img class="Pleft " src="../img/左左.png" alt="">
+        <img class="Pright " src="../img/右右.png" alt="">
+        <img src="../css是网页的皮肤/汽车之家的/img/轮p1.jpg" alt="">
+        <img src="../css是网页的皮肤/汽车之家的/img/轮p2.jpg" alt="">
+    </div>
+
+    <div class="press">
+
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+        let nav_texts = document.querySelector("div.texts")
+        let nav_texts_spans = nav_texts.querySelectorAll("span")
+        // console.log(nav_texts_spans);
+        nav_texts_spans.forEach(function (span) {
+            span.onmouseenter = function () {
+                span.classList.add("orange")
+            }
+            span.onmouseleave = function () {
+                span.classList.remove("orange")
+            }
+        })
+    </script>
+    <script>
+        {
+            // press类的div位置调整
+            let press = $('.press')
+            console.log(press);
+            let left = (press.parent().width() - press.width()) / 2
+
+            press.css("left", left + "px")
+            press.css("top", left + "px")
+
+            // press.attr("left")
+            console.log(press.position().left);
+        }
+        {
+            // 轮播图里面左右箭头的出现
+            let Pturn =$('.Pturn')
+            let Pleft = $('.Pturn .Pleft')
+            let Pright = $('.Pturn .Pright')
+            Pturn.mouseenter(function(){
+                // console.log("鼠标划入");
+                Pleft.addClass("b")
+                Pright.addClass("b")
+            })
+            Pturn.mouseleave(function(){
+                // console.log("鼠标划入");
+                Pleft.removeClass("b")
+                Pright.removeClass("b")
+            })
+            Pleft.mouseup(function(){
+                $('.Pturn img:nth-of-type(3)').toggleClass('n')
+            })
+            Pright.mouseup(function(){
+                $('.Pturn img:nth-of-type(3)').toggleClass('n')
+            })
+        }
+    </script>
+</body>
+
+</html>

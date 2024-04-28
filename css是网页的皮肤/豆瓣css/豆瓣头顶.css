@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* 顶部！ */
+.top {
+    height: 28px;
+    background-color: #545652;
+    min-width: 950px;
+}
+
+.top a:hover {
+    color: #fff;
+}
+
+/* #download {
+    
+} */
+.top li a {
+    line-height: 28px;
+    padding: 0 5px;
+    /* margin: 0 5px; */
+}
+
+.top a {
+    color: #d5d5d5;
+
+}
+
+.top .topl a {
+    float: left;
+}
+
+.top .topr a {
+    float: right;
+}
+
+.QR {
+    float: right;
+    padding-top: 28px;
+    position: relative;
+    /* position: absolute; */
+    left: 88px;
+    display: none;
+}
+
+#download:hover+.QR {
+    display: block;
+}
+
+
+
+
+/* 搜索栏！ */
+.nav-wrap {
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    background-color: #e5ebe4;
+}
+
+.nav-wrap .nav-logo {
+    width: 145px;
+    height: 56px;
+}
+
+.nav-wrap .nav-logo a {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    margin: 0 0 0px 32px;
+    line-height: 56px;
+    color: #27a;
+    font-size: 28px;
+}
+
+.nav-wrap .nav-search {
+    display: block;
+}
+
+.nav-wrap #inp-quary {
+    height: 30px;
+}
+
+.nav-wrap .form {
+    display: block;
+    width: 600px;
+}
+
+#inp-query {
+    display: block;
+    height: 40px;
+    position: relative;
+    left: 300px;
+    bottom: 45px;
+}
+
+.inp-but {
+    width: 42px;
+    height: 42px;
+    background-image: url(https://img3.doubanio.com/dae/accounts/resources/ded47ae/movie/assets/nav_mv_bg.png?s=1);
+
+    background-size: 580px;
+    /* 让背景图片铺满整个小 div */
+    background-position: left bottom;
+    /* 将背景图片定位到右下角 */
+    position:relative;
+    left: 950px;
+    bottom: 85px;
+}
+
+
+
+
+
+
+.nav-vol{
+    height: 40px;
+    background-color: #e5ebe4;
+}
+.nav-vol ol{
+    margin: 0 0 0 38px;
+}
+
+
+.nav-vol ol li{
+    display: block;
+    width: 150px;
+    float: left;
+}
+.nav-vol ol li a{
+    color: #27a;
+    line-height: 40px;
+}
+.img-logo{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    left: 1150px;
+    bottom: 130px;
+}  
+
+
+#section1{
+    height: 180px;
+}

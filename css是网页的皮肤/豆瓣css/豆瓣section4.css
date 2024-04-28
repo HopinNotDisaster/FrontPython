@@ -1,0 +1,48 @@
+/* section4 */
+#section4{
+    width: 70%;
+    height: 26px;
+    margin: 40px auto 0 auto;
+    /* background-color: aquamarine; */
+}
+#section4 span{
+    font-size: 10px;
+    line-height: 26px;
+}
+#section4 span .s1{
+    margin-left:0 ;
+}
+#section4 .s2{
+    margin-left:300px ;
+}
+
+
+
+
+/* section3 */
+
+#section3{
+    width: 600px;
+    height: 800px;
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 50px;
+}
+.middle-left{
+    position: absolute;
+    width: 300px;
+    margin-left: 35%;
+    /* margin-right: -180px; */
+}
+.leftp{
+    width: 300px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    background-color: #27a;
+}
+.middle-left ol li{
+    height: 30px;
+    line-height: 30px;
+}

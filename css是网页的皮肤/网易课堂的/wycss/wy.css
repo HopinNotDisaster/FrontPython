@@ -1,0 +1,446 @@
+.top {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 56px;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+}
+
+/* div的height不会继承到子类中！ */
+.top-wrap {
+    width: 1200px;
+    height: 56px;
+    margin: 0 350px;
+    /* background-color: lightblue; */
+}
+
+.tw-logo {
+    width: 140px;
+    height: 26px;
+    position: absolute;
+    /* margin-top: 14px; */
+    margin: 14px 24px 0 0;
+}
+
+/* span 元素具有默认的行高，而这个行高可能会导致实际显示高度大于其中内容的高度。
+浏览器在计算元素的高度时会考虑行高的影响。 */
+
+.tw-search {
+    width: 546px;
+    height: 38px;
+    margin: 9px 0 0 0;
+    position: absolute;
+    left: 520px;
+    border: 1px solid #FF3F29;
+    border-radius: 5px;
+    font-size: 0;
+}
+
+.tws-course {
+    height: 38px;
+    line-height: 38px;
+    width: 42px;
+    font-size: 16px;
+    /* cursor: pointer; */
+    /* position: relative; */
+    margin-left: 12px;
+}
+
+.tws-course+span {
+    text-align: left;
+    font-size: 14px;
+    font-family: "PingFang SC", PingFangSC-Regular;
+    margin-right: 4px;
+}
+
+.tws-input {
+    /* border-radius: 0 0 0px 0px; */
+
+    text-align: center;
+    line-height: 36px;
+    width: 490px;
+    height: 36px;
+    margin-left: 54px;
+    /* width: 492px; */
+    /* position: relative; */
+    /* outline: none; */
+    /* margin: 0 0 0 66px; */
+    position: relative;
+    bottom: 38px;
+}
+
+.tws-input>input {
+    width: 100%;
+    /* 让输入框宽度充满整个父级容器 */
+    height: 100%;
+    box-sizing: border-box;
+    /* 让输入框的实际宽度包括边框和内边距 */
+    /* padding: 5px; 可选：设置输入框内边距 */
+    /* border: 1px solid #FF3F29; */
+    /* border-radius: 10px; */
+    border: none;
+    /* border-radius: 5px; */
+}
+
+.tws-input>input:focus {
+    outline: none;
+}
+
+.tws-search {
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 60px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #FF3F29;
+    border-radius: 0px 6px 6px 0px;
+    /* cursor: pointer; */
+    color: #fff;
+}
+
+.tws-search>span {
+    font-size: 15px;
+    width: auto;
+    height: auto;
+}
+
+/* 顶部的右侧选项 */
+.tw-options {
+    font-size: 16px;
+    height: 56px;
+    line-height: 56px;
+    /* text-align: center; */
+    /* background-color: antiquewhite; */
+}
+
+.tw-options span {
+    margin-right: 10px;
+}
+
+.tw-options>img {
+    /* margin: 6px 0; */
+    border-radius: 50px;
+    position: relative;
+    top: 8px;
+}
+
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+/* 中间部分 */
+
+.middle {
+
+    background-color: rgba(236, 236, 236, 0.39);
+    /* height: 200px; */
+    /* margin: 0 348.5px; */
+    padding: 70px 348.5px;
+}
+
+.m1 {
+    height: 320px;
+    /* background-color: lightpink; */
+    display: flex;
+    margin-top: 5px;
+}
+
+.m1-l {
+    padding: 13px 0;
+    width: 230px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.m1-l div {
+    width: 230px;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 2px 0;
+    text-align: left;
+    line-height: 40px;
+}
+
+.m1-l div span:nth-of-type(1) {
+    font-weight: 600;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.m1-l div:nth-of-type(1) span:nth-of-type(1) {
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.m1-l div span:nth-of-type(2) {
+    font-size: 14px;
+}
+
+/* m1左的划入部分 向下看*/
+/* m1左的划入部分 向下看*/
+
+
+.middle .m1 .m1-l .m1l-h1 {
+    /* float: left; */
+    position: absolute;
+    /* left: 230px; */
+    left: 589px;
+    top: 69px;
+    width: 513px;
+    height: 320px;
+    padding: 24px;
+    /* background-color: cadetblue; */
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 99999;
+    text-align: left;
+    box-sizing: border-box;
+    display: none;
+}
+.middle .m1 .m1-l div:first-of-type:hover~div{
+    display: block;
+}
+.middle .m1 .m1-l div:nth-of-type(2):hover~div{
+    display: block;
+}
+.middle .m1 .m1-l div:nth-of-type(3):hover~div{
+    display: block;
+}
+.middle .m1 .m1-l div:nth-of-type(4):hover~div{
+    display: block;
+}
+.middle .m1 .m1-l div:nth-of-type(5):hover~div{
+    display: block;
+}
+.middle .m1 .m1-l div:nth-of-type(6):hover~div{
+    display: block;
+}
+.middle .m1 .m1-l div:nth-of-type(7):hover~div{
+    display: block;
+}
+
+.m1-l .m1l-h1 span:first-of-type ,
+.m1-l .m1l-h1 span:nth-of-type(7){
+    display: block;
+    font-weight: 700;
+}
+.middle .m1 .m1-l .m1l-h1 span{
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+
+/* 图片的span */
+.m1-l .m1l-h1 span:nth-of-type(8){
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: 80px;
+}
+.middle .m1 .m1-l .m1l-h1 span:nth-of-type(8) img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 140px;
+    height: 80px;
+    border-radius: 10px;
+}
+.middle .m1 .m1-l .m1l-h1 span:nth-of-type(9),
+.middle .m1 .m1-l .m1l-h1 span:nth-of-type(10){
+    display: block;
+    height: 18px;
+}
+
+
+/* m1左的划入部分 向上看*/
+/* m1左的划入部分 向上看*/
+/* m1左的划入部分 向上看*/
+/* m1左的划入部分 向上看*/
+
+
+.m1-m {
+    margin: 0 10px;
+}
+
+.m1-m img {
+    width: 718px;
+    height: 320px;
+    border-radius: 5px;
+}
+
+.m1-r {
+    width: 230px;
+    height: 320px;
+    /* background-color: aquamarine; */
+}
+
+.m1-r div:first-of-type {
+    padding: 12px;
+}
+
+.m1-r img {
+    width: 230px;
+    height: 58px;
+}
+
+
+
+/* 直播公开课 向下*/
+.middle .m2{
+    padding: 0;
+    box-sizing: border-box;
+    height: 365px;
+    margin: 40px 0 0 0 ;
+    /* background-color: lightcoral; */
+}
+.middle .m2 .m2-text span{
+    font-size: 30px;
+}
+
+.middle .m2 .m2-1{
+    border-radius: 10px;
+    width: 291px;
+    height: 315px;
+    margin-top: 10px;
+    /* background-color: cadetblue; */
+    background-color: #fff;
+}
+.middle .m2 .m2-1 img{
+    width: 291px;
+    height: 164px;
+    border-radius: 10px;
+
+}
+.middle .m2 .m2-1 span{
+    margin: 5px ;
+}
+.middle .m2 .m2-1 span:nth-of-type(2){
+    margin: 5px 0 45px 5px;
+}
+.middle .m2 .m2-1 span:last-of-type,
+.middle .m2 .m2-1 span:nth-of-type(1){
+    font-size: 13px;
+}
+
+
+/* 复制份 */
+
+.middle .m2 .m2-12{
+    border-radius: 10px;
+    width: 291px;
+    height: 315px;
+    margin-top: 10px;
+    /* background-color: cadetblue; */
+    background-color: #fff;
+}
+.middle .m2 .m2-12 img{
+    width: 291px;
+    height: 164px;
+    border-radius: 10px;
+
+}
+.middle .m2 .m2-12 span{
+    margin: 5px ;
+}
+.middle .m2 .m2-12 span:nth-of-type(2){
+    margin: 5px 0 45px 5px;
+}
+.middle .m2 .m2-12 span:last-of-type,
+.middle .m2 .m2-12 span:nth-of-type(1){
+    font-size: 13px;
+}
+
+/* 复制份 123*/
+
+.middle .m2 .m2-123{
+    border-radius: 10px;
+    width: 291px;
+    height: 315px;
+    margin-top: 10px;
+    /* background-color: cadetblue; */
+    background-color: #fff;
+}
+.middle .m2 .m2-123 img{
+    width: 291px;
+    height: 164px;
+    border-radius: 10px;
+
+}
+.middle .m2 .m2-123 span{
+    margin: 5px ;
+}
+.middle .m2 .m2-123 span:nth-of-type(2){
+    margin: 5px 0 45px 5px;
+}
+.middle .m2 .m2-123 span:last-of-type,
+.middle .m2 .m2-123 span:nth-of-type(1){
+    font-size: 13px;
+}
+
+.middle .m2>div{
+    margin-right: 10px;
+}
+
+
+/* 直播公开课 向上*/
+
+
+
+
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+/* 底部栏 */
+.bottom {
+    /* padding: 36px 200px 36px 100px; */
+    padding: 20px  200px;
+    height: 190px;
+    background-color: #474443;
+}
+.bottom .b-wrap{
+    /* margin: -36px -200px -36px -100px; */
+    /* margin: -10px; */
+    /* background-color: #FF3F29; */
+    z-index: 999;
+    margin: 0 140px ;
+    font-size: 13px;
+}
+.bottom .b-wrap span{
+    margin: 10px ;
+    width: auto;
+    display: inline-flex;
+}

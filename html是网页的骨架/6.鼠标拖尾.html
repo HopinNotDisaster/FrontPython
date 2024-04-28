@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-color: black;
+        }
+
+        img.jwj {
+            position: absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    <script>
+        // 鼠标每第SPEED次移动就会生成一个鸡尾酒。
+        const SPEED = 5
+        let count = SPEED
+        document.onmousemove = function (e) {
+            console.log("鼠标游动！");
+            count--
+            if (count <= 0) {
+                count = SPEED
+
+                let img = document.createElement("img")
+
+                img.src = "../img/鸡尾酒.png"
+                let  img_width = 36
+                img.style.width = img_width + "px"
+                img.classList.add("jwj")
+                let left = e.pageX - img_width/2
+                img.style.left = left + "px"
+                let top = e.pageY - img_width/2
+                img.style.top = top + "px"
+
+                document.body.appendChild(img)
+
+                let mysetintervar = setInterval(function () {
+                    img_width -= 2
+                    img.style.width = img_width + "px"
+                    left += 1
+                    img.style.left = left + "px"
+                    top += 1
+                    img.style.top = top + "px"
+                    if(img_width <= 0){
+                        clearInterval(mysetintervar)
+                        img.remove()
+                    }
+
+                }, 30)
+            }
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

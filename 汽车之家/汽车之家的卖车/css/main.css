@@ -1,0 +1,145 @@
+.main{
+    height: 490px;
+    /* background-color: violet; */
+    background-image: url(../img/background.png);
+
+}
+.main .login-box{
+    width: 480px;
+    height: 450px;
+    padding: 29px 40px 40px 40px;
+    background-color: aliceblue;
+
+    right: 250px;
+    top: 25px;
+}
+.main .login-box .how-login{
+    height: 40px;
+}
+.main .login-box .how-login span:first-of-type{
+    font-size: 24px;
+    left: 20px;
+    color: tomato;
+}
+
+
+.main .login-box .how-login span:last-of-type{
+    font-size: 24px;
+    right: 20px;
+}
+
+/* .main .login-box .hr{
+    margin: 50px 0 0 0;
+    color: rgba(249, 252, 255, 0.306);
+}
+.main .login-box .move-line{
+    top: 78.5px;
+    width: 150px;
+    height: 2px;
+    background-color: tomato;
+    right: 0px;
+} */
+
+.main .login-box .input-box1{
+    display: flex;
+    width: 401px;
+    height: 41px;
+    border: 1px solid #888;
+    margin: 25px 0 10px 0;
+}
+.main .login-box .input-box1 input{
+    background-color: aliceblue;
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    margin: 0 0 0 10px;
+    
+}
+.main .login-box .input-box1 input:focus{
+    outline: none;
+}
+
+.main .login-box .input-box2{
+    width: 401px;
+    height: 41px;
+    border: 1px solid #888;
+    margin: 10px 0 0 0;
+
+}
+
+.main .login-box .input-box3{
+    display: flex;
+    width: 401px;
+    height: 41px;
+    border: 1px solid #888;
+    margin: 10px 0 0 0;
+
+}
+.main .login-box .input-box3 input{
+    background-color: aliceblue;
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    margin: 0 0 0 10px;
+    
+}
+.main .login-box .input-box3 input:focus{
+    outline: none;
+}
+
+
+
+.main .login-box .input-box4{
+    display: flex;
+    width: 401px;
+    height: 41px;
+    border: 1px solid #888;
+    margin: 10px 0 0 0;
+
+}
+.main .login-box .input-box4 input{
+    background-color: aliceblue;
+
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    margin: 0 0 0 10px;
+    
+}
+.main .login-box .input-box4 input:focus{
+    outline: none;
+}
+
+
+.main .login-box .entry-event{
+    /* display: flex; */
+    height: 18px;
+    font-size: 14px;
+    /* line-height: 15px; */
+    /* background-color: violet; */
+    margin: 20px 0 0 0;
+}
+.main .login-box .entry-event input+span{
+    margin: 0 0 0 18px;
+}
+.main .login-box .entry-event input{
+    /* align-items: top; */
+    width: 14px;
+    height: 14px;
+    bottom: 1px;
+}
+/* .main .login-box .entry-event span:last-of-type{
+    margin: 0 0 0 auto;
+    right: 0;
+    
+} */
+.main .login-box .entry-event span:last-of-type a{
+    text-decoration: none;
+    color: rgb(54, 160, 227);
+}
+

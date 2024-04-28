@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .c{
+            width: 80px;
+        }
+
+        .c1{
+            height: 20px;
+            background-color: aquamarine;
+        }
+        .c2{
+            height: 0;
+            transition: transform 2s;
+            transition: height  2s linear;
+            /* height: 60px; */
+            background-color: bisque;
+        }
+
+        .c1:hover+.c2{
+            height: 60px;
+            transform: rotate(45deg);
+        }
+
+        @keyframes myrotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .t{
+            width: 400px;
+            height: 400px;
+            animation: myrotate 10s linear infinite;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- <a href=""></a> -->
+
+    <div class="c">
+        <div class="c1"></div>
+        <div class="c2"></div>
+    </div>
+
+
+
+    <div class="t">
+        <img src="../img/太极.png" alt="">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.bottom{
+    display: flex;
+    /* height: 400px; */
+}
+
+.bottom img{
+    width: 100%;
+}
+.threep{
+    display: flex;
+    /* height: 400px; */
+}
+
+.threep img{
+    width: 100%;
+}
+
+
+.questions span{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin: 30px auto;
+}
+.questions ul li{
+    list-style: none;
+    display: block;
+    width: 1200px;
+    margin: 10px auto;
+    font-size: 18px;
+    border-bottom: 1px solid #888;
+    padding-bottom: 20px;
+}
+.questions ul li div:last-of-type{
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
